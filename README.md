@@ -1,7 +1,7 @@
 # shodan-tests
 
-Prueba simple de uso de Shodan.
+Simple test of Shodan Api
 
-Toma como parámetros una lista de redes en csv y txt y un puerto.
+Takes as parameters a list of networks in csv format and a port.
 
-Busca en todas las redes las ips que tengan ese puerto abierto según Shodan.
+Searches all networks for ips with that port open.
