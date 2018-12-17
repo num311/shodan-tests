@@ -13,7 +13,7 @@ parser.add_option("-p","--port",action="store",dest="puerto",type="int", help="p
 
 (options,args) = parser.parse_args()
 
-if options.redes == None or options.puerto == None:
+if options.redes is None or options.puerto == None:
 	parser.error("Usage: shodan_test.py -f file -p port")
 
 port=str(options.puerto)
