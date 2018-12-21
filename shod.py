@@ -7,7 +7,7 @@ import logging
 
 logging.basicConfig(level=logging.DEBUG)
 
-api = shodan.Shodan('ciiIrBn83gBr7pn5m2s0UjItF4wgHSZw')
+api = shodan.Shodan('xxxxxxxxxxxxxxxxxxxxxxx')
 
 
 parser = OptionParser()
