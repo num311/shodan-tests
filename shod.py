@@ -37,6 +37,7 @@ except FileNotFoundError:
 # If all parameters are correct, we throw the request to Shodan using our api key
 
 for row in df1.values:
+
     time.sleep(1)
     logging.debug("Network: " + str(row[0]))
     resultado = (api.search('net:' + str(row[0]) + ' port:' + port))
@@ -44,3 +45,5 @@ for row in df1.values:
     print()
     for res in resultado['matches']:
         print(res['ip_str'] + ' ' + str(res['port']) + ' ' + str(res['hostnames']))
+
+
