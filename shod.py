@@ -38,9 +38,9 @@ except FileNotFoundError:
 
 for row in df1.values:
     time.sleep(1)
-    logging.debug("Red: " + str(row[0]))
+    logging.debug("Network: " + str(row[0]))
     resultado = (api.search('net:' + str(row[0]) + ' port:' + port))
-    print("Numero de ips con puerto " + port + " abierto: " + str(resultado['total']))
+    print("Number of ips with port " + port + " open: " + str(resultado['total']))
     print()
     for res in resultado['matches']:
         print(res['ip_str'] + ' ' + str(res['port']) + ' ' + str(res['hostnames']))
